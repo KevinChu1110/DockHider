@@ -69,6 +69,14 @@ struct AppMenuView: View {
                 manager.refreshApps()
             }
             
+            Divider()
+            
+            Button("☕️ 支持開發者") {
+                if let url = URL(string: "https://buymeacoffee.com/guanrung11n") {
+                    NSWorkspace.shared.open(url)
+                }
+            }
+            
             Button("結束 DockHider") {
                 NSApplication.shared.terminate(nil)
             }
