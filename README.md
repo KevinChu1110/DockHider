@@ -47,18 +47,29 @@ brew install --cask KevinChu1110/tap/dockhider
 
 **DockHider** is a powerful macOS menu bar utility designed to declutter your workspace. Hide any app icon from the Dock while keeping them instantly accessible via global shortcuts and a clean menu interface.
 
-### ✨ Features
-- **Hide Dock Icons**: Toggle application visibility to keep your Dock clean.
+### ✨ Key Features
+- **Hide Dock Icons**: Toggle application visibility to keep your Dock clean and focused.
 - **Custom Global Shortcuts**: Record **per-app shortcuts** to bring hidden windows to the front instantly.
-- **Manual App Selection**: Support for apps located in non-standard directories (Steam, Shared, etc.).
-- **Automatic Re-signing**: Automatically fixes code signatures after modification to bypass macOS "App is damaged" errors.
-- **Clean Management**: The main list only shows apps managed by you, with search filtering for adding new ones.
+- **Manual App Selection**: Pick applications from any directory, including Steam, Shared, or Downloads.
+- **Automatic Re-signing (Ad-hoc)**: Automatically fixes code signatures after modification to bypass macOS "App is damaged" errors.
+- **Clean Management**: The main list only shows apps managed by you, excluding system agents and helpers.
 - **Instant Wake-up**: Click any app in the menu to focus its windows immediately.
 
 ### 📖 How to Use
-1. **Hide an App**: Use "Pick App to Hide..." to search or "Manually Select .app..." for specific files.
-2. **Set Shortcuts**: Click `...` next to a hidden app -> "Set Shortcut...", then press your desired key combination (e.g., `⌥G`).
-3. **Wake Up**: Click the app name in the menu or use your recorded global shortcut.
+
+#### 1. Pick an App to Hide
+Click "**Pick App to Hide...**" to search from the list, or use "**Manually Select .app...**" at the bottom to find files in specific directories.
+![Picker](usage_picker.png)
+
+#### 2. Record Custom Shortcuts
+Click the `...` button next to a hidden app and select "**Set Shortcut...**".
+![Menu](usage_menu.png)
+
+Simply press your desired key combination (e.g., `Option + G`). The app will automatically capture the shortcut and display it in the menu.
+![Recorder](usage_recorder.png)
+
+#### 3. Set Permissions (If Blocked)
+If macOS blocks the modification, click "**Settings Permissions**" in the menu and enable **DockHider** under System Settings > App Management.
 
 ### 📥 Installation (Homebrew)
 ```bash
