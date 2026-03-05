@@ -21,10 +21,20 @@
 - **一鍵喚醒**：點擊選單中的 App 名稱，立即將其視窗帶到最前景。
 
 ### 📖 使用教學
-1. **挑選 App**：點擊「挑選 App 隱藏...」從清單搜尋，或使用「手動選擇 App 檔案...」選取特定的 `.app`。
-2. **設定權限**：若遇到系統阻擋修改，請點擊選單中的「設定權限」，並在系統設定中開啟 **DockHider** 的開關。
-3. **錄製快捷鍵**：點擊 App 右側的 `...` 鈕 -> 「設定快捷鍵...」，直接按下您想要的組合鍵（如 `⌥S`）即可完成綁定。
-4. **喚醒 App**：直接點擊選單中的 App 名稱，或按下您設定的自定義快捷鍵。
+
+#### 1. 挑選 App 隱藏
+點擊「**挑選 App 隱藏...**」可從清單搜尋，或使用底部的「**手動選擇 App 檔案...**」選取特定目錄下的 `.app` 檔案。
+![Picker](usage_picker.png)
+
+#### 2. 錄製自定義快捷鍵
+點擊 App 右側的 `...` 選鈕，選擇「**設定快捷鍵...**」。
+![Menu](usage_menu.png)
+
+直接按下您想要的按鍵組合（如 `Option + G`），系統會自動完成綁定並顯示在選單中。
+![Recorder](usage_recorder.png)
+
+#### 3. 設定權限 (如遇阻擋)
+若遇到系統阻擋修改 App，請點擊選單中的「**設定權限**」，並在系統設定中開啟 **DockHider** 的開關。
 
 ### 📥 安裝方式 (Homebrew)
 ```bash
@@ -47,9 +57,8 @@ brew install --cask KevinChu1110/tap/dockhider
 
 ### 📖 How to Use
 1. **Hide an App**: Use "Pick App to Hide..." to search or "Manually Select .app..." for specific files.
-2. **Permissions**: If blocked, click "Settings Permissions" and enable **DockHider** under System Settings > App Management.
-3. **Set Shortcuts**: Click `...` next to a hidden app -> "Set Shortcut...", then press your desired key combination (e.g., `⌥S`).
-4. **Wake Up**: Click the app name in the menu or use your recorded global shortcut.
+2. **Set Shortcuts**: Click `...` next to a hidden app -> "Set Shortcut...", then press your desired key combination (e.g., `⌥G`).
+3. **Wake Up**: Click the app name in the menu or use your recorded global shortcut.
 
 ### 📥 Installation (Homebrew)
 ```bash
