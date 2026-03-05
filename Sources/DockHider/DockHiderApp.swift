@@ -11,10 +11,11 @@ struct DockHiderApp: App {
     @StateObject private var appManager = AppManager()
 
     var body: some Scene {
-        // 使用 macOS 14+ 的 MenuBarExtra API
+        // 使用 .window 樣式，支援彈窗與更豐富的互動
         MenuBarExtra("DockHider", systemImage: "dock.arrow.up.rectangle") {
             AppMenuView(manager: appManager)
+                .frame(width: 250) // 固定寬度，使其看起來像選單
         }
-        .menuBarExtraStyle(.menu)
+        .menuBarExtraStyle(.window)
     }
 }
